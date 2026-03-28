@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
-
-const dmSans = DM_Sans({
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-});
 import BackgroundGlow from "@/components/BackgroundGlow";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -38,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={dmSans.className}>
+    <html lang="de">
       <body>
         <LanguageProvider>
           <BackgroundGlow />
