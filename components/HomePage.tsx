@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useLang } from '@/lib/LanguageContext';
 import VideoPlayer from './VideoPlayer';
 
@@ -49,7 +48,7 @@ export default function HomePage() {
                         <span className="step-warning__icon">{'\u26A0\uFE0F'}</span>
                         <span className="step-warning__text">{t.stepWarning}</span>
                     </div>
-                    <Link href="/register" className="btn">{t.step2Btn}</Link>
+                    <a href="https://t.me/WifiMoneySupportBot" target="_blank" rel="noopener noreferrer" className="btn">{t.step2Btn}</a>
                 </div>
 
                 {/* Step 3 */}
